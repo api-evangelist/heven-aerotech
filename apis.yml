@@ -1,17 +1,35 @@
 aid: heven-aerotech
 name: Heven AeroTech
-description: 'Heven AeroTech is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Heven AeroTech (formerly Heven Drones) is a Dulles, Virginia headquartered manufacturer of
+  hydrogen fuel-cell powered, runway-independent unmanned aircraft systems built for defense,
+  national security and public safety missions. Founded in 2019, the company designs its own
+  hydrogen propulsion stack and ships six named airframes — Raider, Z1, H2D55, Refueler, Atlas and
+  Urban X — marketed on multi-hour endurance, low thermal and acoustic signature, and rapid payload
+  and hydrogen-tank swaps. The Z1 is listed as a Blue UAS Select platform and the H2D55, Raider and
+  Z1 are advertised as NDAA compliant. Heven operates sites in Dulles VA, Bingen WA, Mevo Carmel
+  Israel and Mumbai India, and raised a $100M Series B led by IonQ. Heven AeroTech is a hardware
+  manufacturer: it publishes no public developer program, API, SDK or machine-readable contract.
+image: https://hevenaerotech.com/wp-content/uploads/2026/08/favicon-512x512-1.png
 url: https://raw.githubusercontent.com/api-evangelist/heven-aerotech/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profile
+x-tier-reason: no-developer-program
 specificationVersion: '0.20'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Drones
+- Unmanned Aerial Systems
+- Aerospace
+- Defense
+- National Security
+- Public Safety
+- Hydrogen
+- Manufacturing
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,61 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/heven-aerotech-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/heven-aerotech_stock/
+  url: https://hevenaerotech.com/
+- type: Blog
+  url: https://hevenaerotech.com/resources/?tab=blogs
+- type: BlogRSS
+  url: https://hevenaerotech.com/feed/
+- type: TermsOfService
+  url: https://hevenaerotech.com/wp-content/uploads/2026/08/Website-Terms-of-Use-Accessibility-Policy-Aug-26.pdf
+- type: PrivacyPolicy
+  url: https://hevenaerotech.com/wp-content/uploads/2026/05/Privacy-Policy_HAI-13MAY26-5.pdf
+- type: Contact
+  url: https://hevenaerotech.com/contact-us/
+- type: About
+  url: https://hevenaerotech.com/company/
+- type: Careers
+  url: https://hevenaerotech.com/work-with-us/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/hevenaerotech/
+- type: YouTube
+  url: https://www.youtube.com/@Hevenaerotech
+- type: Conformance
+  url: conformance/heven-aerotech-conformance.yml
+- type: Compliance
+  url: conformance/heven-aerotech-conformance.yml
+- type: LLMsTxt
+  url: llms/heven-aerotech-llms.txt
+- type: Plans
+  url: plans/heven-aerotech-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/heven-aerotech-rate-limits.yml
+
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Heven AeroTech is an aerospace hardware manufacturer whose product is the airframe: its entire
+    web presence is a 15-page WordPress marketing site whose only machine-readable endpoint is the
+    CMS's own /wp-json/, with no api./docs./developer./portal. subdomain resolving in DNS and no
+    /developers/, /api/ or /docs page in its sitemap.
+  evidence:
+  - url: https://hevenaerotech.com/openapi.json
+    status: 404
+  - url: https://hevenaerotech.com/.well-known/agent-card.json
+    status: 404
+  - url: https://hevenaerotech.com/developers/
+    status: 404
+  - url: https://hevenaerotech.com/sitemap_index.xml
+    status: 200
+  - url: https://hevenaerotech.com/wp-json/
+    status: 200
+  checked: '2026-08-22'

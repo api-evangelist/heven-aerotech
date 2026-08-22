@@ -1,0 +1,12 @@
+generated: '2026-08-22'
+method: searched
+source: https://hevenaerotech.com/contact-us/
+plan_count: 0
+note: >-
+  Heven AeroTech publishes no pricing, plans or tiers. /pricing/ returns 404, and no pricing page
+  appears in the site's page sitemap (sitemap_index.xml -> page-sitemap.xml, 15 pages, none
+  commercial). Acquisition is a direct sales motion: the site's only commercial call to action is
+  the "Contact Us" form and a datasheet download per airframe. This is a defense hardware
+  manufacturer selling capital equipment into government and defense programs, not a self-serve
+  product, so an absent price list is the expected posture rather than a gap.
+plans: []

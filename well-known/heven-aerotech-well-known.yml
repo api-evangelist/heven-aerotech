@@ -1,0 +1,32 @@
+generated: '2026-08-22'
+method: probed
+source: live HTTP probes of https://hevenaerotech.com/.well-known/*
+note: >-
+  Every probed /.well-known/ path returned 404 from the WordPress marketing site. This file records
+  a verified ABSENCE — no WellKnown or SecurityTxt pointer is wired into apis.yml, because the
+  provider serves none of these documents. hevendrones.com 301-redirects to hevenaerotech.com, and
+  no api./docs./developer./portal. subdomain resolves, so hevenaerotech.com is the only host to probe.
+hosts:
+- host: hevenaerotech.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

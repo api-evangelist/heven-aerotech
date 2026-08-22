@@ -1,0 +1,60 @@
+generated: '2026-08-22'
+method: searched
+source: https://hevenaerotech.com/z1/, https://hevenaerotech.com/h2d55/, https://hevenaerotech.com/raider/, https://hevenaerotech.com/defense/
+note: >-
+  Heven AeroTech publishes no machine-readable API contract, so none of the API/interoperability
+  standards below could be asserted from a spec. What the company DOES publish, on its own product
+  pages, are the defense-procurement conformance claims that govern its market — the domain-standard
+  signature for unmanned aircraft sold into US defense and public safety. Those are recorded here
+  with the exact page the claim appears on. Claims are the provider's own marketing statements; this
+  file records that they were made and where, not an independent audit of them.
+domain_standards:
+- id: ndaa-section-848
+  name: NDAA Section 848 (FY2020) covered-foreign-entity restrictions
+  market: US defense / public-safety unmanned aircraft procurement
+  conforms: true
+  evidence:
+    claim: 'NDAA Compliant'
+    urls:
+    - https://hevenaerotech.com/h2d55/
+    - https://hevenaerotech.com/raider/
+    - https://hevenaerotech.com/z1/
+    basis: provider-published product specification badge on three airframe pages
+- id: diu-blue-uas
+  name: DIU Blue UAS Select (Defense Innovation Unit cleared list)
+  market: US Department of Defense unmanned aircraft procurement
+  conforms: true
+  scope: Z1 airframe only
+  evidence:
+    claim: 'The only Blue UAS Select hydrogen-powered drone'
+    urls:
+    - https://hevenaerotech.com/z1/
+    - https://hevenaerotech.com/
+    basis: provider-published product page title and homepage product callout; DIU Blue UAS list approval also referenced in the provider newsroom (November 2025)
+- id: itar-ear
+  name: ITAR / EAR export control
+  market: US defense export
+  conforms: unknown
+  evidence:
+    claim: "ITAR/EAR Compliance Specialist role posted in Operations"
+    urls:
+    - https://hevenaerotech.com/work-with-us/
+    basis: >-
+      Indirect. The company staffs an export-control compliance function, which implies an ITAR/EAR
+      program, but publishes no compliance statement. Recorded as unknown rather than asserted.
+api_standards:
+- id: openapi
+  conforms: false
+  evidence: No OpenAPI/Swagger document found on any host; see x-coverage in apis.yml.
+- id: oauth2
+  conforms: false
+  evidence: /.well-known/oauth-authorization-server 404; no authenticated developer surface exists.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration 404.
+- id: rfc9457
+  conforms: false
+  evidence: No API error surface published.
+- id: rfc9116
+  conforms: false
+  evidence: /.well-known/security.txt 404.
