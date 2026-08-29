@@ -10,6 +10,17 @@ description: >-
   Z1 are advertised as NDAA compliant. Heven operates sites in Dulles VA, Bingen WA, Mevo Carmel
   Israel and Mumbai India, and raised a $100M Series B led by IonQ. Heven AeroTech is a hardware
   manufacturer: it publishes no public developer program, API, SDK or machine-readable contract.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://hevenaerotech.com/wp-content/uploads/2026/08/favicon-512x512-1.png
 url: https://raw.githubusercontent.com/api-evangelist/heven-aerotech/refs/heads/main/apis.yml
 x-type: company
